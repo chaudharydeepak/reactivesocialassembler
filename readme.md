@@ -19,3 +19,9 @@
 # generate native image with graalvm plugin [ you can use spring boot native image plugin as well ].
 $ mvn clean -Pnative-image package
 ```
+
+- Plain spring-boot run takes over 1 sec vs native image starts in about ~300ms.
+- Native image can be further compressed:
+```
+$ upx -7 -k com.social.techblog.assembler.assemblerapplication
+```

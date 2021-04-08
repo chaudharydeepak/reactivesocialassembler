@@ -20,11 +20,11 @@
 $ mvn clean -Pnative-image package
 ```
 
-- Plain spring-boot run takes over 1 sec vs native image starts in about ~300ms.
+- ###### Plain spring-boot run takes over 1 sec vs native image starts in about ~300ms.
   ```
   2021-04-07 22:49:03.773  INFO 13774 --- [           main] c.s.t.assembler.AssemblerApplication     : Started AssemblerApplication in 0.315 seconds (JVM running for 0.316)
   ```
-- Native image can be further compressed:
+- ###### Native image can be further compressed:
   ```
   $ upx -7 -k com.social.techblog.assembler.assemblerapplication
   ```

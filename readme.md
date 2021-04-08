@@ -16,4 +16,6 @@
 # fetch DevTo data
 @GetMapping(value = "/devto", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
 
+# generate native image with graalvm plugin [ you can use spring boot native image plugin as well ].
+$ mvn clean -Pnative-image package
 ```

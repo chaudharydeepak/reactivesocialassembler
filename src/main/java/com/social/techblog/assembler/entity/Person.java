@@ -2,7 +2,6 @@ package com.social.techblog.assembler.entity;
 
 import org.springframework.data.annotation.Id;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 //    CREATE TABLE person
@@ -11,10 +10,10 @@ import lombok.Data;
 //    age INT);
 
 @Data
-@AllArgsConstructor
+//@AllArgsConstructor
 public class Person {
     @Id
-    private final long id;
-    private final String name;
-    private final int age;
+    private long id;
+    private String name;
+    private int age;
 }

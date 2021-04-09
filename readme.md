@@ -6,6 +6,8 @@
 
 ###### All endpoints are reactive.
 
+###### Include Oracle R2DBC driver with Spring R2DBC impl.
+
 ```
 # fetch StackOverflow data
 @GetMapping(value = "/sov", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
@@ -16,6 +18,13 @@
 # fetch DevTo data
 @GetMapping(value = "/devto", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
 
+.....
+public interface PersonRepository extends ReactiveCrudRepository<Person, Long> {
+}
+.....
+```
+
+```
 # generate native image with graalvm plugin [ you can use spring boot native image plugin as well ].
 $ mvn clean -Pnative-image package
 ```

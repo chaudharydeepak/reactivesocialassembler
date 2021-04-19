@@ -1,7 +1,6 @@
 package com.social.techblog.assembler;
 
 import com.social.techblog.assembler.entity.Person;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.nativex.hint.TypeHint;

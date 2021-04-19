@@ -1,8 +1,7 @@
 package com.social.techblog.assembler.entity;
 
-import org.springframework.data.annotation.Id;
-
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 //    CREATE TABLE person
 //        (id INT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
